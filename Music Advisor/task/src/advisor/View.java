@@ -77,7 +77,7 @@ public class View {
                         .getAsJsonObject()
                         .getAsJsonObject(JSONKEYS.ALBUMS.getKey())
                         .get(JSONKEYS.TOTAL.getKey())
-                        .getAsInt() / (double) Integer.parseInt(pageSize)) + "---");
+                        .getAsInt() / (double) Integer.parseInt(pageSize)) + "---\n");
 
         return stringBuilder.toString();
     }
@@ -110,7 +110,7 @@ public class View {
                         .getAsJsonObject()
                         .getAsJsonObject(JSONKEYS.PLAYLISTS.getKey())
                         .get(JSONKEYS.TOTAL.getKey())
-                        .getAsInt() / (double) Integer.parseInt(pageSize)) + "---");
+                        .getAsInt() / (double) Integer.parseInt(pageSize)) + "---\n");
 
 
         return stringBuilder.toString();
@@ -138,7 +138,7 @@ public class View {
                         .getAsJsonObject()
                         .getAsJsonObject(JSONKEYS.CATEGORIES.getKey())
                         .get(JSONKEYS.TOTAL.getKey())
-                        .getAsInt() / (double) Integer.parseInt(pageSize)) + "---");
+                        .getAsInt() / (double) Integer.parseInt(pageSize)) + "---\n");
 
         return stringBuilder.toString();
     }
@@ -160,5 +160,5 @@ public class View {
 
         return stringBuilder.toString();
     }
-    
+
 }

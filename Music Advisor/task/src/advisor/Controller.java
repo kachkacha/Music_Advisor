@@ -56,7 +56,7 @@ public class Controller {
                 "\nwaiting for code...");
 
         waitForUser : {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 20; i++) {
                 if (model.getAccessCode() != null) break waitForUser;
                 try {
                     Thread.sleep(1000);
@@ -164,7 +164,7 @@ public class Controller {
         try {
             String categoryId = view.getCategoryId(model.getRequest(ENDPOINTS.CATEGORIES, new QUERY[]{QUERY.LIMIT.setParam("50"), QUERY.OFFSET.setParam("0")}), category);
 
-            String json = model.getRequest(ENDPOINTS.PLAYLISTS.setCategoryId(categoryId), null);
+            String json = model.getRequest(ENDPOINTS.PLAYLISTS.setCategoryId(categoryId), new QUERY[]{QUERY.OFFSET.setParam("0"), QUERY.LIMIT.setParam(model.getPageSize())});
             String error = view.errorCode(json);
 
             if (error != null) {

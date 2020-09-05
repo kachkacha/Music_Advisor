@@ -4,12 +4,13 @@ gradle
 course-info.yaml
 course-remote-info.yaml
 Music Advisor/Useful connections
-Music Advisor/task/build
-Music Advisor/task/out
 Music Advisor/task/test
 Music Advisor/Final chords
 Music Advisor/Processing links
 Music Advisor/Rocking OAuth
 Music Advisor/Strings and fiddlesticks
 Music Advisor/lesson-info.yaml
+Music Advisor/task/out
+Music Advisor/task/build
+META-INF
 

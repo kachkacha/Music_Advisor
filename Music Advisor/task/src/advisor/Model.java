@@ -92,7 +92,6 @@ public class Model {
                 .uri(URI.create(composeURI(dataBase.getAPI_SERVER_PATH() + endpoint.getEndpoint(), querey)))
                 .GET()
                 .build();
-        System.out.println(composeURI(dataBase.getAPI_SERVER_PATH() + endpoint.getEndpoint(), querey));
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         return response.body();

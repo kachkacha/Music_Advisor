@@ -4,7 +4,7 @@ import advisor.enums.ACTION;
 
 public class DataBase {
 
-    private int PORT = 80;
+    private int PORT = 8080;
     private String CLIENT_ID = "8a6ab0488d2e4821a92e890bdf176b5d";
     private String CLIENT_SECRET = "97da1b626d37462c9236c2f6aa2bcbca";
     private String REDIRECT_URI = "http://localhost:" + PORT;
