@@ -17,7 +17,7 @@ after succesful execution of above commands you can use them to change pages :
   
 for running the program do the following
 
-go to the executable jar file directory :
+execute following to go to the jar file directory :
 cd out/artifacts/Music_Advisor_Music_Advisor_task_main_jar/
 
 and execute the following command :
